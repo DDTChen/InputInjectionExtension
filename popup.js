@@ -8,7 +8,7 @@
  *
  * @type {string}
  */
-var QUERY = 'cloud';
+var QUERY = 'tree';
 
 var kittenGenerator = {
     /**
@@ -47,7 +47,7 @@ var kittenGenerator = {
      * 'requestKittens', by generating 'img' elements, and stuffing them into
      * the document for display.
      *
-     * @param {ProgressEvent} e The XHR ProgressEvent.
+     * @param {Object} e The XHR ProgressEvent.
      * @private
      */
     showPhotos_: function (e) {
@@ -64,7 +64,7 @@ var kittenGenerator = {
      * Given a photo, construct a URL using the method outlined at
      * http://www.flickr.com/services/api/misc.urlKittenl
      *
-     * @param {DOMElement} A kitten.
+     * @param {Object} photo A kitten.
      * @return {string} The kitten's URL.
      * @private
      */
